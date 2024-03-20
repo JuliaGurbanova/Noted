@@ -10,7 +10,7 @@ import SwiftData
 
 struct NoteDetailView: View {
     @Environment(\.modelContext) private var context
-    @State private var note: Note
+    @Bindable var note: Note
     @State private var isEditing = false
     @FocusState private var isFocused: Bool
 
@@ -38,15 +38,6 @@ struct NoteDetailView: View {
                         isEditing = false
                         isFocused = false
                     }
-                }
-            }
-
-            ToolbarItemGroup(placement: .bottomBar) {
-                Spacer()
-                NavigationLink {
-                    NoteDetailView()
-                } label: {
-                    Label("", systemImage: "square.and.pencil")
                 }
             }
         }

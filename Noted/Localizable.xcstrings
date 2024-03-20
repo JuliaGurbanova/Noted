@@ -41,6 +41,16 @@
         }
       }
     },
+    "Add Note" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить заметку"
+          }
+        }
+      }
+    },
     "All" : {
       "localizations" : {
         "ru" : {
@@ -110,6 +120,9 @@
           }
         }
       }
+    },
+    "Failed to create preview: %@" : {
+
     },
     "Favorite" : {
       "localizations" : {
